@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/movies_style.css">
+  </head>
+
+  <body>
+    <h3> Submit here for a top {{num_html}} movie recommendation</h3>
+                      <!-- ^ Jinja template ^ -->
+    <form action="/results">
+      <p>Please rate {{num_html}} of the following movies (0 -> didn't liked it, 5 -> love this movie):</p>
+      <ul>
+        <li>Forrest Gump - Movie number: 356</li>
+        <li>Titanic - Movie number: 1721</li>
+        <li>American History X - Movie number: 2329</li>
+        <li>Django Unchained - Movie number: 99114</li>
+        <li>Good Will Hunting - Movie number: 1704</li>
+        <li>Batman Begins - Movie number: 33794</li>
+        <li>The Big Lebowski - Movie number: 1732</li>
+        <li>The Godfather - Movie number: 858</li>
+        <li>The Shawshank Redemption - Movie number: 318</li>
+        <li>Pulp Fiction - Movie number: 296</li>
+        <li>Star Wars III - Revenge of the Sith - Movie number: 33493</li>
+      </ul>
+      <p>If your missing one movie please let me know. You can write an email
+        to customer-support@movies_recommender.com
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col>">
+            <input type="text" name="movie1" placeholder="Movie number">
+          </div>
+          <div class="col">
+            <input type="number" name="rating1" placeholder="0-5" required>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col>">
+            <input type="text" name="movie2" placeholder="Movie number">
+          </div>
+          <div class="col">
+            <input type="number" name="rating2" placeholder="0-5" required>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col>">
+            <input type="text" name="movie3" placeholder="Movie number">
+          </div>
+          <div class="col">
+            <input type="number" name="rating3" placeholder="0-5" required>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <input type="submit" name="Submit" value="Submit">
+        </div>
+      </div>
+    </form>
+
+    <br>
+    <button onclick="location.href='/index'" type="submit" class="js-btn">
+      Go back to homepage
+    </button>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+  </body>
+
+</html>
