@@ -11,4 +11,6 @@ Building a movie recommender, which takes User input and generates 3 recommendat
 4. Run Flask (either via wsgi.py scipt or through Flask CLI)
 5. Go to localhost in webbrowser [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
+
+### Web App in action
 ![](movie_recommender.gif)
